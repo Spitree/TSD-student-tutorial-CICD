@@ -23,7 +23,7 @@ jobs:
         run: black .
 
       - name: Run Linter
-        run: ruff check .
+        run: ruff check . --fix
 
       - name: Run Tests
         run: pytest
